@@ -10,22 +10,43 @@
         integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous'>
 </head>
 
-<body>
+<body class="bg-opacity-50 bg-dark">
 
     <h1 id="inicio">Exercícios</h1>
 
     <p><span id="escrever_paragrafo"></span></p>
-    <p><span id="escrever_paragrafo_jq"></span></p>
+    <button class="btn btn-danger" onclick="calcular()">Calculadora</button> <!--Seletor onclick no html-->>
 
-    <button id="ex1" class="btn btn-outline-info">Exercício Variáveis</button>
-    <button id="ex2" class="btn btn-outline-info">Manipular html com Javascript
+    <button class="btn btn-warning" id="funcionou">Vai funcionar? Veja no console</button>
+
+    <button id="ex1" class="btn btn-info mt-2">Exercício Variáveis</button>
+    <button id="ex2" class="btn btn-info">Manipular html com Javascript
     </button>
-    <button id="ex3" class="btn btn-outline-info">Eventos entre HTML e JS
+    <button id="ex3" class="btn btn-info">Eventos entre HTML e JS
     </button>
-    <button id="ex4" class="btn btn-outline-info">CRUD
+    <a id="ex4" class="btn btn-info" href="/crud.html">CRUD</a>
+    
+    <button id="ex5" class="btn btn-info">Consumo de API
     </button>
-    <button id="ex5" class="btn btn-outline-info">Consumo de API
-    </button>
+
+    <div class="row">
+        <div class="col-6">
+            <br>
+            <form  id="criar_form" action="">
+                <label for="nome">Digite seu nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control">
+                <br>
+                <label for="idade">Digite sua idade:</label>
+                <input type="number" name="idade" id="idade" class="form-control">
+               <br>
+               <button type="submit" class="btn btn-success">Enviar</button> 
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    
+
 
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js'
